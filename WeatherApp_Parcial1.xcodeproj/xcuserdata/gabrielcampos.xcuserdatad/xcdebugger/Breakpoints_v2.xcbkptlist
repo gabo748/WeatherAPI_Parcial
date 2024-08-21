@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7189E12F-0F5C-4047-965E-AFB9D619B782"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6E135EEA-9940-4686-AF20-F2D21057C3CA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeatherApp_Parcial1/Core/Modules/Home/View/WeatherDetailView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "6E135EEA-9940-4686-AF20-F2D21057C3CA - 5ead9c5e29efabb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 () -&gt; () in WeatherApp_Parcial1.WeatherDetailView.body.getter : some"
+                  moduleName = "WeatherApp_Parcial1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielcampos/Developer/WeatherApp_Parcial1/WeatherApp_Parcial1/Core/Modules/Home/View/WeatherDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "6E135EEA-9940-4686-AF20-F2D21057C3CA - e9096d44e5dd1283"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 () -&gt; () in WeatherApp_Parcial1.WeatherDetailView.body.getter : some"
+                  moduleName = "WeatherApp_Parcial1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielcampos/Developer/WeatherApp_Parcial1/WeatherApp_Parcial1/Core/Modules/Home/View/WeatherDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "34">
+               </Location>
+               <Location
+                  uuid = "6E135EEA-9940-4686-AF20-F2D21057C3CA - 5ff0697a73c677a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 () -&gt; () in WeatherApp_Parcial1.WeatherDetailView.body.getter : some"
+                  moduleName = "WeatherApp_Parcial1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielcampos/Developer/WeatherApp_Parcial1/WeatherApp_Parcial1/Core/Modules/Home/View/WeatherDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

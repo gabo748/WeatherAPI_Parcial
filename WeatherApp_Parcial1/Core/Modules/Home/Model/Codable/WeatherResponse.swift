@@ -23,7 +23,7 @@ struct WeatherResponse: Decodable {
 
 struct WeatherInfo: Decodable {
     let id: Int?
-    let description: String?
+    let description: WeatherStatesInfo?
     let currentStatus: String?
     
     enum CodingKeys: String, CodingKey {
@@ -46,4 +46,3 @@ struct WeatherPlaceInfo: Decodable {
     let id: Int?
     let country: String?
 }
-

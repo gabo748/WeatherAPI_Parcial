@@ -38,29 +38,12 @@ struct HomeView: View {
                 }
                 .padding(.horizontal, 20)
                 .disabled(!viewModel.areCoordinatesValid)
-                
-                if let lastUpdate = viewModel.lastUpdateTime {
-                    Text("Última actualización: \(lastUpdate, formatter: dateFormatter)")
-                        .font(.subheadline)
-                        .padding()
-                }
-                
-                if viewModel.isLoading {
-                    ProgressView()
-                        .padding()
-                }
+
                 
                 Spacer()
             }
             .background(Color(.systemGray6).edgesIgnoringSafeArea(.all))
         }
-    }
-    
-    private var dateFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .short
-        formatter.timeStyle = .short
-        return formatter
     }
 }
 
