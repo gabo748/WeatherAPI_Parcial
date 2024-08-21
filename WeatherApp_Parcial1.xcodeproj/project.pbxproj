@@ -109,9 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				4B97CB052C75629D00525773 /* Networking */,
-				4B97CAFB2C755EAA00525773 /* Services */,
-				4B97CAFA2C755EA300525773 /* ViewModels */,
-				4B97CAF92C755E9900525773 /* Views */,
 				4B97CAF82C755E9400525773 /* Core */,
 				4B97CACE2C755E6000525773 /* WeatherApp_Parcial1App.swift */,
 				4B97CAD02C755E6000525773 /* ContentView.swift */,
@@ -152,27 +149,6 @@
 				4B97CAFC2C755EBA00525773 /* Modules */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		4B97CAF92C755E9900525773 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		4B97CAFA2C755EA300525773 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		4B97CAFB2C755EAA00525773 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		4B97CAFC2C755EBA00525773 /* Modules */ = {
