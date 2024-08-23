@@ -2,7 +2,8 @@ import SwiftUI
 
 struct WeatherDetailView: View {
     @EnvironmentObject var viewModel: WeatherViewModel
-    
+    @Environment(\.presentationMode) var presentationMode
+
     var body: some View {
         ZStack {
             VStack(spacing: 20) {
@@ -70,6 +71,12 @@ struct WeatherDetailView: View {
                 .padding(.horizontal, 20)
                 
             }
+            .alert(viewModel.errorMessage, isPresented: $viewModel.showAlert) {
+                Button("OK") {
+                    presentationMode.wrappedValue.dismiss()
+                    viewModel.clearState()
+                }
+            }
             .padding(.vertical, 20)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .overlay(alignment: .topTrailing) {
@@ -92,7 +99,7 @@ struct WeatherDetailView: View {
         .onAppear {
             Task {
                 viewModel.beginTimer()
-                await viewModel.getWeatherInformation()
+                try await viewModel.getWeatherInformation()
             }
         }
         .navigationTitle("Detalles")

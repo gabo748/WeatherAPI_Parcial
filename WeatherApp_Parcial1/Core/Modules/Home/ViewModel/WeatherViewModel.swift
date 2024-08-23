@@ -9,11 +9,7 @@ final class WeatherViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var showAlert = false
     @Published var errorMessage = ""
-    @Published var weatherResponse: WeatherResponse? {
-        didSet {
-            print("CODE \(weatherResponse?.weatherInfo?.first?.description?.code ?? "NO CODE")")
-        }
-    }
+    @Published var weatherResponse: WeatherResponse?
     @Published var latitude = ""
     @Published var longitude = ""
     @Published var lastUpdateTime: Date? = nil
@@ -36,21 +32,26 @@ final class WeatherViewModel: ObservableObject {
     }
     
     // MARK: - Methods
-    func getWeatherInformation() async {
+    func getWeatherInformation() async throws {
+        showAlert = false
         do {
             isLoading = true
+            guard let latitude = Double(latitude), let longitude = Double(longitude) else {
+                throw ErrorHandler.coordinatesNotValid
+            }
             weatherResponse = try await weatherInfoService.getWeatherInformation(
                 with: .init(
-                    latitude: Double(latitude) ?? 0.0,
-                    longitude: Double(longitude) ?? 0.0
+                    latitude: latitude,
+                    longitude: longitude
                 )
             )
             lastUpdateTime = Date()
             isLoading = false
             resetCountdown()
-        } catch {
+        } catch let error as ErrorHandler {
             isLoading = false
-            errorMessage = error.localizedDescription
+            errorMessage = error.errorMessage
+            showAlert = true
         }
     }
     
@@ -58,11 +59,17 @@ final class WeatherViewModel: ObservableObject {
         setupTimer()
         startCountdown()
     }
-    
+
+    func clearState() {
+        latitude = ""
+        longitude = ""
+        timerManager?.stop()
+    }
+
     private func setupTimer() {
         timerManager = TimerManager(interval: countdownInterval) { [weak self] in
             Task {
-                await self?.getWeatherInformation()
+                try await  self?.getWeatherInformation()
             }
         }
         timerManager?.start()
