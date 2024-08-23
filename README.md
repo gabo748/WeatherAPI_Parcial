@@ -61,10 +61,18 @@ Esta es una aplicación desarrollada en Swift que consume la API de [OpenWeather
 
 ### Manejo de errores
 
-1. **Coordenadas Invalidas:** [video](invalid_coordinates.mp4)
-2. **Error de la API:** [video](APIERROR.mp4)
+1. **Coordenadas Invalidas:**
+https://github.com/user-attachments/assets/a0857b57-5d29-4f58-b16d-2e1cad9697f5
+
+2. **Error de la API:**
+https://github.com/user-attachments/assets/b7054124-f413-4f51-8141-536346819957
 
 ### Mostrando  datos correctamente:
 
-1. **Coordenada correctamente:** [video](Success.mp4)
-2. **Actualización en tiempo real (cada 30 segundos):** [video](Actualization.mp4)
+1. **Coordenada correctamente:**
+https://github.com/user-attachments/assets/711388e8-6a8b-4078-a0bb-cfd9809c54a5
+
+3. **Actualización en tiempo real (cada 30 segundos):
+https://github.com/user-attachments/assets/1169c746-b0d8-4bbf-825e-f09f40178ae1
+
+
