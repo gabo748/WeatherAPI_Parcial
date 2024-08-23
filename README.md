@@ -51,6 +51,9 @@ Esta es una aplicación desarrollada en Swift que consume la API de [OpenWeather
 
 ### Pratron de diseño MVVM
 
+
+
+
 - `Networking`: Manejador de la API que realiza la consulta a WeatherAPI y maneja las respuestas de la API.
 - `Model`: Contiene los modelos para poder hacer un mapping de los datos provenientes de la API.
 - `Service`: El encargado de hacer las fallas a los endpoints específicos.
@@ -70,9 +73,9 @@ https://github.com/user-attachments/assets/b7054124-f413-4f51-8141-536346819957
 ### Mostrando  datos correctamente:
 
 1. **Coordenada correctamente:**
-https://github.com/user-attachments/assets/711388e8-6a8b-4078-a0bb-cfd9809c54a5
+https://github.com/user-attachments/assets/cf3b3995-ecaf-4bf6-a2f2-fca242add300
 
-3. **Actualización en tiempo real (cada 30 segundos):
+2. **Actualización en tiempo real (cada 30 segundos):
 https://github.com/user-attachments/assets/1169c746-b0d8-4bbf-825e-f09f40178ae1
 
 
