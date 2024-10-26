@@ -52,6 +52,7 @@ Esta es una aplicación desarrollada en Swift que consume la API de [OpenWeather
 ### Pratron de diseño MVVM
 
 
+![muguiwaras_logo_512x512](https://github.com/user-attachments/assets/bf5273e6-9ec6-4a92-98a0-3a34a453dc84)
 
 
 - `Networking`: Manejador de la API que realiza la consulta a WeatherAPI y maneja las respuestas de la API.
